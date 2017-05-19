@@ -1,0 +1,1 @@
+Assets folder hold all the images related to the project
