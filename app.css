@@ -1,0 +1,378 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@font-face {
+   font-family: ProximaNova;
+   src: url(ProximaNovaBold.otf);
+}
+/*change bootstrap default*/
+
+[class^=" col-"],[class^="col-"],.container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.row {
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+
+@media screen and (min-width: 1260px){
+    .container {
+        width: 1224px;
+    }
+}
+
+@media screen and (min-width: 764px) and (max-width: 1260px){
+    .container {
+        width: 100%;
+    }
+}
+
+/*top header and Property image*/
+
+/*.arrowDown{
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #495662;
+    position: relative;
+    top:-2px;
+}*/
+.arrows{
+    position: absolute;
+    top:45%;
+    width:50px;
+}
+
+
+.bell{
+    width: 20px;
+    position:relative;
+    top:-3px;
+}
+@media screen and (max-width: 768px){
+    .floatingNav{
+        padding: 10px 2.5% 0px 2.5%;
+        position: fixed;
+        top: 0px;
+        background-color: #fff;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+    }
+}
+.floatingNav{
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    left: 0;
+    padding: 10px 7.5% 0px 7.5%;
+    z-index: 100;
+    width: 100%;
+}
+
+.headText{
+    opacity: 0.87;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #495662;
+}
+.inline-block{
+    display: inline-block;
+}
+.left-arrow{
+    left:5%;
+}
+.propertyImage{
+    height: 31vw;
+    width: 100%;
+    text-align: center;
+    background-image: url(assets/banner-image1.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.propertyHead{
+    background-color: #fff;
+}
+.relative{
+    position: relative;
+}
+.right-arrow{
+    right:5%;
+    transform: rotate(180deg);
+}
+
+.searchBox{
+    width: 50%;
+    height: 32px;
+    margin-top: 14px;
+    border-radius: 2px;
+    background-color: #f0f0f0;
+    display: inline-block;
+}
+
+.searchIcon{
+    margin-left: 17px;
+    margin-top: 7px;
+    margin-right: 23px;
+    font-size: 16px;
+    color: #495662;
+}
+.searchInput{
+    background-color: #f0f0f0;
+    width: 85%;
+    border: 0px;
+    opacity: 0.54;
+    font-family: Roboto;
+    font-size: 14px;
+    margin-bottom:13px; 
+    outline: none;
+}
+.tabContainer{
+    float: right;
+    padding-top: 15px;
+}
+
+.topBar{
+    background-color: #fff; 
+    height: 62px;
+}
+.userImage{
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.zolo-logo{
+    margin: 15px 22px 17px 22px;
+    vertical-align: top;
+}
+
+/*sub header - Property Name and desc*/
+
+.blue-text{
+    color:#00a3e0;
+    opacity: 0.8;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.bookNow{
+    background-color: #009688;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+
+}
+.buttons{
+    width: 45%;
+    height: 40px;
+    border-radius: 2px;
+    text-align: center;
+    opacity: 0.8;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.mrgBtm10px{margin-bottom: 10px;}
+.mrgBtm20px{margin-bottom: 20px;}
+.mrgBtm60px{margin-bottom: 60px;}
+.mrgLt20px{margin-left: 20px;}
+.mrgRt45px{margin-right: 7%;}
+.mrgRt60px{margin-right: 4%;}
+.mrgRt3per{margin-right: 3%;}
+.mrgRt20px{margin-right: 20px;}
+.mrgTop10px{margin-top: 10px;}
+.mrgTop20px{margin-top: 20px;}
+.mrgTop22px{margin-top: 22px;}
+.mrgTop30px{margin-top: 30px;}
+.mrgTop40px{margin-top: 40px;}
+.mrgTop50px{margin-top: 50px;}
+
+.nav>li>a{
+    opacity: 0.8;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    color: #07202a;
+    border-bottom: 2px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color:#00a3e0;
+    border-bottom: 2px solid #00a3e0;
+}
+.navbar-nav.custom{
+    width:100%;
+}
+.no-padding{
+    padding: 0px;
+}
+.padLt20px{padding-left: 20px;}
+.padTop30px{padding-top: 30px;}
+.padTop40px{padding-top: 40px;}
+.custom.nav>li>a{padding-left: 10px;}
+.propertyAddress{
+    opacity: 0.87;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #07202a;
+}
+.propertyName{
+    opacity: 0.8;
+    font-family: ProximaNova;
+    font-size: 36px;
+    font-weight: bold;
+    color: #07202a;
+}
+.scheduleVisit{
+    border: solid 1px #00202c;
+    text-align: center;
+    color: #07202a;
+    margin-right: 20px;
+}
+
+.subHead{
+    background-color: #fff;
+    padding: 0px 30px;
+}
+
+/* property description and details */
+
+.discount-icon{
+    width: 70px;
+}
+.cardHead{
+    opacity: 0.8;
+    font-family: ProximaNova;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.greenBold{
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #409287;
+}
+.propertyContent{
+    background-color: #e4e7e7;
+    padding-top: 24px;
+}
+.offer{
+    background-color: #ffffff;
+    margin-bottom: 24px;
+    border-left: 5px solid #009688;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding:25px 15px;
+}
+.cardBoldContent{
+    opacity: 0.8;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cardContent{
+    opacity: 0.6;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.clear{
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.riskFree{
+    background-color: #fff;
+    margin-bottom: 24px;
+    padding: 15px;
+}
+.riskFree.pad25px{padding:25px 15px;}
+.riskFreeImage{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.room-type-image{
+    width: 100%;
+    min-height: 135px;
+    min-width: 190px;
+}
+.card{
+    background-color: #ffffff;
+    margin-bottom: 24px;
+    padding: 25px 15px;
+}
+.customerImage{
+    vertical-align: text-bottom;
+    margin-right: 20px;
+    width:60px;
+}
+.postedDate{
+    opacity: 0.6;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+
+.sharingBtn{
+    width: 17%;
+    height: 35px;
+    border-radius: 100px;
+    border: solid 2px #00202c;
+    display: inline-block;
+    margin-right: 24px;
+    margin-top: 12px;
+    padding: 6px;
+    text-align: center;
+    opacity: 0.8;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    color: #07202a;
+}
+.sharingBtn.selected{
+    border: solid 2px #00a3e0;
+    color: #ffffff;
+    background-color: #00a3e0
+}
+.similar-prop-img{
+    width:100%;
+    border:2px solid #00a3e0;
+}
+.stars{
+    min-width: 150px;
+}
+.table-head{
+    padding: 12px 60px;
+    background-color: #e4e7e7;
+    color: #07202a;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: auto;
+}
+.table-body{
+    padding: 12px 60px;
+    background-color: #f9f9f9;
+    color: #999;
+    font-size: 14px;
+    overflow: auto;
+}
+.text-center{
+    text-align: center;
+}
+
+
