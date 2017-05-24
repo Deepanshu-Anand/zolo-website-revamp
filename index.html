@@ -3,32 +3,64 @@
 <head>
 
     <!-- CSS (load bootstrap) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
 <!--     <link rel="stylesheet/less" type="text/css" href="styles.less" /> -->
     <link rel="stylesheet" type="text/css" href="app.css">
 
     
-    <script src="lib/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--     <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script> -->
+<!--     <script src="lib/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="app.js"></script>
 </head>
+
 
 <body class="removeDefault">
 <div class="topBar">
     <img class="zolo-logo" src="assets/zolo-logo.png">
     <div class="searchBox searchBoxRt">
-        <span class="searchIcon glyphicon glyphicon-search"></span>
+        <span class="searchIcon fa fa-search"></span>
         <input type="text" name="search" placeholder="Click and type to search anywhere" class="searchInput">
     </div>
-    <div class="tabContainer">
+<!--     <div class="tabContainer">
         <div class="headText inline-block mrgRt20px">About</div>
         <div class="headText inline-block mrgRt20px">Download App</div>
         <img class="bell mrgRt20px inline-block " src="assets/notification-bell.png">
         <img class="userImage inline-block " src="assets/avatar-1.png">
-    </div>
+    </div> -->
+
+
+
+
+<nav class="navbar navbar-toggleable-sm navbar-light topNavBar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Download App</a>
+      </li>
+      <li class="nav-item">
+        <img class="bell mrgRt20px inline-block " src="assets/notification-bell.png">
+      </li>
+      <li class="nav-item">
+        <img class="userImage inline-block " src="assets/avatar-1.png">
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
 <!--     <div class="headText inline-block userName">User</div>
     <div class="inline-block arrowDown"></div> -->
 
@@ -42,27 +74,29 @@
 </div>
 <div class="subHead">
     <div class="container">
-        <div class="row padTop30px mrgBtm60px">
-            <div class="col-xs-7 col-sm-7 col-md-6">
+        <div class="row padTop30px">
+            <div class="col-md-7 col-lg-6">
                 <div class="propertyName">Zolo Euphoria For Men</div>
                 <div class="propertyAddress">Electronic City, Phase-2, Bangalore </div>
             </div>
-            <div class="col-xs-5 ">
+            <div class="col-md-5 ">
                     <img class="mrgRt45px inline-block " src="assets/favourite.png">
                     <img class="inline-block " src="assets/share.png">
             </div>
         </div>
-        <div class="row navigation">
-                <div class="col-xs-8">
-                    <ul class="nav navbar-nav custom">
-                      <li class="active mrgRt60px"><a class="padLt10px" href="#description">DESCRIPTION</a></li>
-                      <li class="mrgRt60px"><a href="#food">FOOD</a></li>
-                      <li class="mrgRt60px"><a href="#amenities">AMENITIES</a></li>
-                      <li class="mrgRt60px"><a href="#reviews">REVIEWS</a></li>
-                      <li class="mrgRt60px"><a href="#location">LOCATION</a></li>
-                    </ul>
+    </div> 
+    <div class="container nav">
+        <div class="row navigation fixed-on-scroll">
+                <div class="col-lg-8 col-sm-12 padTop10px ">
+                    <div class="row custom cardBoldContent">
+                      <div class="active col-sm-2 col-2"><a class="padLt10px" href="#description">DESCRIPTION</a></div>
+                      <div class="col-sm-2 col-2"><a href="#food">FOOD</a></div>
+                      <div class="col-sm-2 col-2"><a href="#amenities">AMENITIES</a></div>
+                      <div class="col-sm-2 col-2"><a href="#reviews">REVIEWS</a></div>
+                      <div class="col-sm-2 col-2"><a href="#location">LOCATION</a></div>
+                    </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-lg-4 col-sm-0 fixed-on-bottom">
                      <div class="inline-block buttons scheduleVisit">SCHEDULE VISIT</div>
                      <div class="inline-block buttons bookNow">BOOK NOW</div>   
                 </div>
@@ -74,13 +108,13 @@
     <div class="container">
         <div class="row">
             <!-- END OF FIRST COLUMN -->
-            <div class="col-xs-12 col-md-8">
+            <div class="col-lg-8 col-md-12">
                     <div class="offer">
                         <div class="row">
-                            <div class="col-sm-2">
+                            <div class="col-sm-2 col-12">
                                 <img class="discount-icon" src="assets/icon-discount.png">
                             </div>
-                            <div class="col-sm-10">
+                            <div class="col-sm-10 col-12">
                                 <div class="cardHead">50% OFF ON YOUR NEXT BOOKING WITH US</div>
                                 <div class="cardContent">
                                     We are offering a 50% off on your booking for this property if you book right now. The 
@@ -90,28 +124,30 @@
                         </div>
                         
                     </div>
-                    <div class="card">
+                    <div class="card room-type">
                         <div class="cardHead">ROOM TYPES AVAILABLE</div>
-                        <div class="sharingBtn selected">1 SHARING</div>
-                        <div class="sharingBtn">2 SHARING</div>
-                        <div class="sharingBtn">3 SHARING</div>
-                        <div class="row padTop40px">
-                            <div class="col-sm-4">
+                        <div class="">
+                            <div class="sharingBtn selected">1 SHARING</div>
+                            <div class="sharingBtn">2 SHARING</div>
+                            <div class="sharingBtn">3 SHARING</div>
+                        </div>
+                        <div class="row padTop20px">
+                            <div class="col-sm-4 col-12">
                                 <img class="room-type-image" src="assets/room-type-image.png">
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-sm-8 col-12">
                                 <div class="cardContent">
-                                    Single sharing offering comes with different perks likes high speed wifi, housekeeping, food, television etc.
+                                    Single sharing offering comes with different perks likes high speed wifi, housekeeping, food, television
                                 </div>
                                 <div class="cardBoldContent inline-block mrgRt20px" >Rent starts from :</div>
                                 <div class="greenBold inline-block"><span class="fa fa-inr"></span> 11,000</div>
-                                <div class="buttons mrgTop20px bookNow">EXPRESS INTEREST</div>   
+                                <div class="buttons mrgTop16px bookNow interest-btn">EXPRESS INTEREST</div>   
 
                             </div>
                         </div>
                         <div class="cardBoldContent inline-block mrgRt20px mrgTop50px" >Assured Amenties in Single Sharing</div>
-                        <div class="row mrgTop30px">
-                            <div class="col-xs-2 mrgRt3per text-center ">
+                        <div class="row mrgTop10px">
+                            <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                 <div>
                                     <img src="assets/icon-wifi.svg">
                                 </div>
@@ -120,7 +156,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-2 mrgRt3per text-center ">
+                            <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                 <div>
                                     <img src="assets/icon-security.svg">
                                 </div>
@@ -129,7 +165,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-2 mrgRt3per text-center no-padding">
+                            <div class="col-sm-2 col-4 text-center mrgTop20px no-padding">
                                 <div>
                                     <img src="assets/icon-housekeeping.svg">
                                 </div>
@@ -138,7 +174,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-2 mrgRt3per text-center ">
+                            <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                 <div>
                                     <img src="assets/icon-tv.svg">
                                 </div>
@@ -147,7 +183,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-2 mrgRt3per text-center ">
+                            <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                 <div>
                                     <img src="assets/icon-bed.svg">
                                 </div>
@@ -159,7 +195,7 @@
                         <div class="cardBoldContent inline-block mrgRt20px mrgTop50px">Price variations are available for this sharing type</div>
                         <div class="mrgTop20px">
                             <div class="row"> 
-                                <div class="col-xs-9">
+                                <div class="col-sm-9">
                                     <div class="table-head">
                                         <div class="left">RENT</div>
                                         <div class="right">DEPOSIT</div>
@@ -191,7 +227,7 @@
                         <div class="blue-text mrgTop20px">*Prices may vary for the same sharing option based on layout, covered area, furniture, amenities, etc You can get more details by talking to Zolo Care at 88 8010 8010.  </div>    
 
                     </div>
-                    <div id="description" class="riskFree pad25px">
+                    <div id="description" class="riskFree pad25px description">
                          <div class="cardHead">DESCRIPTION OF PROPERTY</div>
                          <div class="cardContent ">
                                 Zolo Carnations in Electronic City Phase 2 offers hassle-free long-term stay for women, daily meals and wifi included. Choose from 2-sharing and single occupancy rooms that come with wide, wooden beds and branded comfortable mattresses. Every room has a TV, cupboard, attached bathroom etc. Common spaces provide the benefit of appliances (washing machine, microwave, fridge), community dining, open terrace to celebrate the weather and recreational room equipped with items of entertainment. Exclusive terrace rooms available on request. Situated in Narayana Reddy Layout, Zolo Carnations is suitable for women who work in and around Tech Mahindra, HP, Infosys, Schneider Electric, TCS, Fanuc, Tessolve etc. or are pursuing their studies in XIME, Symbiosis etc. Enjoy the advantage of Zolo being managed by a professional team and being powered by technology and a smart app.
@@ -205,34 +241,35 @@
                         <div class="cardContent mrgBtm10px">
                             *Food is available on subscription only for this property, you have to pay extra for it.
                         </div>
-                        <div class="sharingBtn selected">WEEKDAYS</div>
-                        <div class="sharingBtn">WEEKENDS</div>
-
-                        <div class="row mrgTop50px padLt20px">
-                            <div class="col-xs-1">
+                        <div class="day-type">
+                            <div class="sharingBtn selected">WEEKDAYS</div>
+                            <div class="sharingBtn">WEEKENDS</div>
+                        </div>
+                        <div class="row mrgTop40px padLt20px">
+                            <div class="col-sm-2 col-3 text-center">
                                 <img src="assets/icon-breakfast.svg">
                             </div>
-                            <div class="col-xs-10 ">
+                            <div class="col-sm-10 col-9">
                                 <div class="cardBoldContent inline-block" >Breakfast</div>
                                  <div class="cardContent">Only Vegetarian food options are available for breakfast</div>
                             </div>
                         </div>
 
                         <div class="row mrgTop40px padLt20px">
-                            <div class="col-xs-1">
+                            <div class="col-sm-2 col-3 text-center">
                                 <img src="assets/icon-lunch.svg">
                             </div>
-                            <div class="col-xs-10 ">
+                            <div class="col-sm-10 col-9">
                                 <div class="cardBoldContent inline-block" >Lunch</div>
                                  <div class="cardContent">Only Vegetarian food options are available for breakfast</div>
                             </div>
                         </div>
 
                         <div class="row mrgTop40px padLt20px">
-                            <div class="col-xs-1">
+                            <div class="col-sm-2 col-3 text-center">
                                 <img src="assets/icon-dinner.svg">
                             </div>
-                            <div class="col-xs-10 ">
+                            <div class="col-sm-10 col-9">
                                 <div class="cardBoldContent inline-block" >Breakfast</div>
                                  <div class="cardContent">Only Vegetarian food options are available for breakfast</div>
                             </div>
@@ -245,7 +282,7 @@
                     <div class="card">
                             <div class="cardHead">PROPERTY AMENITIES</div>
                             <div class="row mrgTop30px">
-                                <div class="col-xs-2 mrgRt3per text-center ">
+                                <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                     <div>
                                         <img src="assets/icon-wifi.svg">
                                     </div>
@@ -254,7 +291,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-2 mrgRt3per text-center ">
+                                <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                     <div>
                                         <img src="assets/icon-security.svg">
                                     </div>
@@ -263,7 +300,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-2 mrgRt3per text-center no-padding">
+                                <div class="col-sm-2 col-4 mrgTop20px text-center no-padding">
                                     <div>
                                         <img src="assets/icon-housekeeping.svg">
                                     </div>
@@ -272,7 +309,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-2 mrgRt3per text-center ">
+                                <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                     <div>
                                         <img src="assets/icon-tv.svg">
                                     </div>
@@ -281,7 +318,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xs-2 mrgRt3per text-center ">
+                                <div class="col-sm-2 col-4 mrgTop20px text-center ">
                                     <div>
                                         <img src="assets/icon-bed.svg">
                                     </div>
@@ -322,105 +359,123 @@
             <!-- END OF FIRST COLUMN -->
 
             <!-- SECOND COLUMN -->
-            <div class="col-xs-12 col-md-4 no-padding">
-                <div class="col-sm-6 col-xs-12 col-md-12">
-                    <div class="riskFree">
-                        <img class="riskFreeImage" src="assets/risk-free-trail.png">
-                         <div class="cardHead">INTRODUCING RISK FREE TRIAL</div>
-                         <div class="cardContent">
-                                Stay at any of our property for 3 days and try it
-                                out for free, if you don't like it we will refund your entire booking amount.
+            <div class="col-lg-4 col-md-12">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-6">
+                        <div class="riskFree">
+                            <img class="riskFreeImage" src="assets/risk-free-trail.png">
+                             <div class="cardHead">INTRODUCING RISK FREE TRIAL</div>
+                             <div class="cardContent">
+                                    Stay at any of our property for 3 days and try it
+                                    out for free, if you don't like it we will refund your entire booking amount.
+                            </div>
+                            <div class="greenBold">KNOW MORE</div>
                         </div>
-                        <div class="greenBold">KNOW MORE</div>
                     </div>
-
-                    <div class="riskFree">
-                        <img class="riskFreeImage" src="assets/customer-image.png">
-                         <div class="cardHead">CUSTOMER STORIES</div>
-                         <div class="cardContent">
-                                I am staying at Zolo Kings Landing in Pune. The overall experience at property and management is really awesome. Just pack and move in Zolo..
+                    <div class="col-lg-12 col-sm-6">
+                        <div class="riskFree">
+                            <img class="riskFreeImage" src="assets/customer-image.png">
+                             <div class="cardHead">CUSTOMER STORIES</div>
+                             <div class="cardContent">
+                                    I am staying at Zolo Kings Landing in Pune. The overall experience at property and management is really awesome.
+                            </div>
+                            <div class="greenBold">READ MORE</div>
                         </div>
-                        <div class="greenBold">READ MORE</div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-md-12">
-                    <div class="card">
-                         <div class="cardHead">SIMILAR PROPERTY</div>
-                            <div class="row mrgBtm10px">
-                                <div class="col-xs-6">
-                                    <img class="similar-prop-img" src="assets/pg-image-1.png">
+                    <div class="col-sm-12">
+                        <div class="card">
+                             <div class="cardHead">SIMILAR PROPERTY</div>
+                             <div class="row padLt10px">
+                                <div class="row mrgBtm10px">
+                                    <div class="col-sm-6 col-6">
+                                        <img class="similar-prop-img" src="assets/pg-image-1.png">
+                                    </div>
+                                    <div class="col-sm-6 col-6">
+                                        <div class="cardBoldContent" >Zolo Clove for Men</div>
+                                        <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
+                                        <div class="blue-text mrgTop20px"> 
+                                            Starts at <span class="fa fa-inr"></span> 11,000
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-xs-6">
-                                    <div class="cardBoldContent" >Zolo Clove for Men</div>
-                                    <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
-                                    <div class="blue-text mrgTop20px"> 
-                                        Starts at <span class="fa fa-inr"></span> 11,000
+
+                                <div class="row mrgBtm10px">
+                                    <div class="col-sm-6 col-6">
+                                        <img class="similar-prop-img" src="assets/pg-image-2.png">
+                                    </div>
+                                    <div class="col-sm-6 col-6">
+                                        <div class="cardBoldContent" >Zolo Clove for Men</div>
+                                        <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
+                                        <div class="blue-text mrgTop20px"> 
+                                            Starts at <span class="fa fa-inr"></span> 11,000
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="row mrgBtm10px">
-                                <div class="col-xs-6">
-                                    <img class="similar-prop-img" src="assets/pg-image-2.png">
+                            <div class="row padLt10px">
+                                <div class="row mrgBtm10px">
+                                    <div class="col-sm-6 col-6">
+                                        <img class="similar-prop-img" src="assets/pg-image-3.png">
+                                    </div>
+                                    <div class="col-sm-6 col-6">
+                                        <div class="cardBoldContent" >Zolo Clove for Men</div>
+                                        <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
+                                        <div class="blue-text mrgTop20px"> 
+                                            Starts at <span class="fa fa-inr"></span> 11,000
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-xs-6">
-                                    <div class="cardBoldContent" >Zolo Clove for Men</div>
-                                    <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
-                                    <div class="blue-text mrgTop20px"> 
-                                        Starts at <span class="fa fa-inr"></span> 11,000
+
+                                <div class="row mrgBtm10px">
+                                    <div class="col-sm-6 col-6">
+                                        <img class="similar-prop-img" src="assets/pg-image-4.png">
+                                    </div>
+                                    <div class="col-sm-6 col-6">
+                                        <div class="cardBoldContent" >Zolo Clove for Men</div>
+                                        <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
+                                        <div class="blue-text mrgTop20px"> 
+                                            Starts at <span class="fa fa-inr"></span> 11,000
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="row mrgBtm10px">
-                                <div class="col-xs-6">
-                                    <img class="similar-prop-img" src="assets/pg-image-3.png">
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="cardBoldContent" >Zolo Clove for Men</div>
-                                    <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
-                                    <div class="blue-text mrgTop20px"> 
-                                        Starts at <span class="fa fa-inr"></span> 11,000
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mrgBtm10px">
-                                <div class="col-xs-6">
-                                    <img class="similar-prop-img" src="assets/pg-image-4.png">
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="cardBoldContent" >Zolo Clove for Men</div>
-                                    <div class="cardContent mrgTop10px">Electronic City, Phase-1 Bengaluru</div>
-                                    <div class="blue-text mrgTop20px"> 
-                                        Starts at <span class="fa fa-inr"></span> 11,000
-                                    </div>
-                                </div>
-                            </div>
-                         
-
-                        <div class="greenBold">+ SEE MORE</div>
-                    </div>
-                </div>
-
-                
+                            <div class="greenBold">+ SEE MORE</div>
+                        </div>
+                    </div>   
+                </div>             
             </div>
         </div>
     </div> 
 </div>
 
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 <script>
     
 $( "document" ).ready( function(){
-    var nav = $(".navigation");
+    var nav = $(".fixed-on-scroll");
+    var btn = $(".fixed-on-bottom");
+
     $(document).on( 'scroll', function(){
-      if ($(window).scrollTop() > 600) {
-        nav.addClass("floatingNav").removeClass("row");
+        console.log($(window).innerHeight())
+      if ($(window).scrollTop() > ($(window).innerHeight()*0.8) && $( window ).width()>764) {
+        nav.addClass("floatingNav");//.removeClass("row");
         $(".subHead .container").addClass("mrgBtm60px")
       } else {
-        nav.removeClass("floatingNav").addClass("row");
+        nav.removeClass("floatingNav");//.addClass("row");
         $(".subHead .container").removeClass("mrgBtm60px")
       }
+
+      if ($( window ).width()<992) {
+        btn.addClass("floating-btn");//.removeClass("row");
+        $(".removeDefault").addClass("mrgBtm60px")
+      } else {
+        btn.removeClass("floating-btn");//.addClass("row");
+        $(".removeDefault").removeClass("mrgBtm60px")
+      }
+
       
     });
 })

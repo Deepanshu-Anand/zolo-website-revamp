@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
 @font-face {
    font-family: ProximaNova;
    src: url(ProximaNovaBold.otf);
@@ -14,7 +14,13 @@
     margin-right: -12px;
     margin-left: -12px;
 }
-
+.navigation{
+    min-width: 720px;
+    width: 100%;
+}
+.nav-item{
+    margin-right: 20px;
+}
 
 @media screen and (min-width: 1260px){
     .container {
@@ -22,11 +28,17 @@
     }
 }
 
-@media screen and (min-width: 764px) and (max-width: 1260px){
+@media screen and (max-width: 1260px){
     .container {
         width: 100%;
     }
 }
+
+/*@media screen and (max-width: 600px){
+    .important.col-xs-*{
+      width: 100%;
+    }
+}*/
 
 /*top header and Property image*/
 
@@ -39,6 +51,7 @@
     position: relative;
     top:-2px;
 }*/
+
 .arrows{
     position: absolute;
     top:45%;
@@ -49,7 +62,6 @@
 .bell{
     width: 20px;
     position:relative;
-    top:-3px;
 }
 @media screen and (max-width: 768px){
     .floatingNav{
@@ -67,9 +79,20 @@
     top: 0px;
     background-color: #fff;
     left: 0;
-    padding: 10px 7.5% 0px 7.5%;
+    padding: 10px 3.5% 0px 3.5%;
     z-index: 100;
     width: 100%;
+}
+
+.floating-btn{
+    position: fixed;
+    bottom: 0px;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    left: 0px;
+    padding: 10px 15%;
+    margin: auto;
 }
 
 .headText{
@@ -86,6 +109,15 @@
 .left-arrow{
     left:5%;
 }
+
+.navbar-toggler-icon{
+    width:1em;
+}
+
+.navbar-light .navbar-toggler {
+    border:none;
+    padding: 0rem 0.75rem;
+}
 .propertyImage{
     height: 31vw;
     width: 100%;
@@ -95,6 +127,14 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@media screen and (max-width: 768px){
+    .propertyImage{
+        min-height: 450px;
+        background-size: cover;
+    }
+
 }
 .propertyHead{
     background-color: #fff;
@@ -108,7 +148,7 @@
 }
 
 .searchBox{
-    width: 50%;
+    width: 45%;
     height: 32px;
     margin-top: 14px;
     border-radius: 2px;
@@ -116,12 +156,17 @@
     display: inline-block;
 }
 
+@media screen and (max-width: 768px){
+    .searchBox{
+        width: 80%;
+    }
+}
+
 .searchIcon{
-    margin-left: 17px;
-    margin-top: 7px;
-    margin-right: 23px;
+    margin:7px 15px;
     font-size: 16px;
     color: #495662;
+    opacity: 0.5;
 }
 .searchInput{
     background-color: #f0f0f0;
@@ -133,6 +178,13 @@
     margin-bottom:13px; 
     outline: none;
 }
+
+@media screen and (max-width: 500px){
+    .searchInput{
+        width: 70%;
+    }
+}
+
 .tabContainer{
     float: right;
     padding-top: 15px;
@@ -141,6 +193,20 @@
 .topBar{
     background-color: #fff; 
     height: 62px;
+    padding: 0px 12px;
+}
+.topNavBar{
+    float: right;
+}
+
+.topNavBar.navbar{
+    padding: .9rem 0rem;
+}
+
+@media screen and (max-width:768px){
+    .topNavBar{
+        float: left;
+    }
 }
 .userImage{
     width: 32px;
@@ -153,8 +219,20 @@
     vertical-align: top;
 }
 
+@media screen and (max-width: 960px){
+    .zolo-logo{
+        display: none;
+    }
+}
+
 /*sub header - Property Name and desc*/
 
+.container.nav{
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow: scroll;
+    margin-top: 60px;
+}
 .blue-text{
     color:#00a3e0;
     opacity: 0.8;
@@ -165,19 +243,17 @@
     background-color: #009688;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     color: #fff;
-
 }
 .buttons{
     width: 45%;
-    height: 40px;
+    min-height: 40px;
     border-radius: 2px;
     text-align: center;
     opacity: 0.8;
     font-family: ProximaNova;
     font-size: 14px;
     font-weight: bold;
-    padding-top: 10px;
-    cursor: pointer;
+    padding: 10px;
 }
 .mrgBtm10px{margin-bottom: 10px;}
 .mrgBtm20px{margin-bottom: 20px;}
@@ -188,33 +264,52 @@
 .mrgRt3per{margin-right: 3%;}
 .mrgRt20px{margin-right: 20px;}
 .mrgTop10px{margin-top: 10px;}
+.mrgTop16px{margin-top: 16px;}
 .mrgTop20px{margin-top: 20px;}
 .mrgTop22px{margin-top: 22px;}
 .mrgTop30px{margin-top: 30px;}
 .mrgTop40px{margin-top: 40px;}
 .mrgTop50px{margin-top: 50px;}
 
-.nav>li>a{
+
+.custom>div>a{
+    text-decoration: none;
     opacity: 0.8;
     font-family: ProximaNova;
     font-size: 14px;
     font-weight: bold;
     color: #07202a;
-    border-bottom: 2px solid transparent;
 }
-.nav>li>a:focus, .nav>li>a:hover {
+.custom>div>a:hover,.custom>div>a:focus{
+    color: #00a3e0;
+}
+.custom>div{
+
+    border-bottom: 2px solid transparent;
+    padding-bottom: 20px;
+}
+.custom>div:focus, .custom>div:hover {
     text-decoration: none;
-    background-color: transparent;
-    color:#00a3e0;
     border-bottom: 2px solid #00a3e0;
 }
-.navbar-nav.custom{
+.custom{
     width:100%;
+    text-align: center;
 }
+@media screen and (min-width: 720px){
+    .custom>.col-sm-2{
+        margin-right: 3%;
+    }    
+}
+
 .no-padding{
     padding: 0px;
 }
+.padBtm20px{padding-bottom: 20px;}
+.padLt12px{padding-left: 12px;}
 .padLt20px{padding-left: 20px;}
+.padTop10px{padding-top: 10px;}
+.padTop20px{padding-top: 20px;}
 .padTop30px{padding-top: 30px;}
 .padTop40px{padding-top: 40px;}
 .custom.nav>li>a{padding-left: 10px;}
@@ -247,7 +342,13 @@
 /* property description and details */
 
 .discount-icon{
-    width: 70px;
+    width: 100%;
+    max-width: 100px;
+}
+@media screen and (max-width: 575px){
+    .discount-icon{
+        margin-bottom: 10px;
+    }
 }
 .cardHead{
     opacity: 0.8;
@@ -255,6 +356,9 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+.description{
+    text-align: justify;
 }
 .greenBold{
     font-family: ProximaNova;
@@ -274,6 +378,11 @@
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     padding:25px 15px;
+}
+@media screen and (max-width: 575px){
+    .offer{
+        text-align: center;
+    }
 }
 .cardBoldContent{
     opacity: 0.8;
@@ -306,10 +415,13 @@
     width: 100%;
     margin-bottom: 25px;
 }
+
 .room-type-image{
     width: 100%;
     min-height: 135px;
-    min-width: 190px;
+    min-width: 175px;
+    max-height:175px;
+    max-width: 250px;
 }
 .card{
     background-color: #ffffff;
@@ -330,11 +442,12 @@
 
 .sharingBtn{
     width: 17%;
+    min-width: 100px;
     height: 35px;
     border-radius: 100px;
     border: solid 2px #00202c;
     display: inline-block;
-    margin-right: 24px;
+    margin-right: 4%;
     margin-top: 12px;
     padding: 6px;
     text-align: center;
@@ -343,6 +456,32 @@
     font-size: 14px;
     font-weight: bold;
     color: #07202a;
+}
+@media screen and (max-width: 575px){
+    .card.room-type{
+        text-align: center;
+    }
+    .sharingBtn{
+        margin: auto;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .room-type-image{
+        margin-bottom: 10px;
+    }
+    .interest-btn{
+        margin: auto;
+        margin-top: 16px;
+    }
+    .day-type{
+        text-align: center;
+    }
+    .container.nav{
+        margin-top: 20px;
+    }
+    .floating-btn{
+        padding: 10px 5%;
+    }
 }
 .sharingBtn.selected{
     border: solid 2px #00a3e0;
@@ -357,7 +496,7 @@
     min-width: 150px;
 }
 .table-head{
-    padding: 12px 60px;
+    padding: 12px 10%;
     background-color: #e4e7e7;
     color: #07202a;
     font-size: 14px;
@@ -365,7 +504,7 @@
     overflow: auto;
 }
 .table-body{
-    padding: 12px 60px;
+    padding: 12px 10%;
     background-color: #f9f9f9;
     color: #999;
     font-size: 14px;
