@@ -142,7 +142,7 @@
 @media screen and (max-width: 565px){
     .propertyImage{
         height: 70vh;
-        /*background-size: cover;*/
+        background-position: center center;
         background-image: url("assets/banner-mobile.png");
     }
 
