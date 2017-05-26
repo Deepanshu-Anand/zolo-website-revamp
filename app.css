@@ -129,10 +129,19 @@
     background-size: contain;
 }
 
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px){
     .propertyImage{
+        height: 31vw;
         min-height: 450px;
+    }
+
+}*/
+
+@media screen and (max-width: 565px){
+    .propertyImage{
+        height: 70vh;
         background-size: cover;
+        background-image: url(assets/banner-mobile.png);
     }
 
 }
@@ -231,7 +240,7 @@
     overflow-x: scroll;
     white-space: nowrap;
     overflow: scroll;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .blue-text{
     color:#00a3e0;
